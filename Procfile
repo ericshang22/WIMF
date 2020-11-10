@@ -1,1 +1,1 @@
-web: gunicorn WIMF.wsgi
+web: gunicorn wsgi:app
