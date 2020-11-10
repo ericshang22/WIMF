@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class = "recipe-container">
+{% for recipe in recipes %}
+<br>
+
+<div class = "recipe-box"> 
+    {% for key, value in recipe.items() %}
+<div>
+    {% if key == 'image' %} 
+    <img class = "recipe-image" src = {{ value }} alt = "Image not available">
+    {% elif key == 'Link'%}
+   <a href = {{ value }}> Recipe</a>
+    {% elif key =='Name' %}
+    <div class = "recipe-title"> {{value}} </div>
+    {% else %}
+    {{ key }}: {{ value }} </b>
+    {% endif %}
+</div>
+{% endfor %}
+</div> 
+{% endfor %}
+</div>
+{% endblock %}

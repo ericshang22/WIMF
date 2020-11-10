@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class = "intro" > What's In Your Fridge finds you up to five recipes that
+    you can probably make with what's in your fridge right now  </div>
+<div class = "search-container"> 
+<p> Enter your ingredients separated by commas:</p>
+<input type="textarea" id="meats" class = "searchbar" placeholder="Meats here"> </text>
+<br>
+<input type="textarea" id="vegetables" class = "searchbar" placeholder= "Other ingredients here"></text>
+<br>
+<button id="search-button"> Find Recipes </button> 
+</div>
+<div class = "spin" id= "spinner"></div>
+{% endblock %}
