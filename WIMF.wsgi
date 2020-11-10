@@ -1,0 +1,1 @@
+from WIMF import app as application
