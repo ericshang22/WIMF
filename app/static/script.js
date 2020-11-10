@@ -5,7 +5,7 @@ $(document).ready(function() {
         console.log("clicked");
         if (Boolean($("#meats").val()) || Boolean($("#vegetables").val())) {
         this.disabled = true;
-        const url = "http://127.0.0.1:5000/search";
+        const url = "/search";
         const postInfo = { 
             meats : $("#meats").val().split(","),
             vegetables : $("#vegetables").val().split(",")
