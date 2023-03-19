@@ -1,3 +1,5 @@
-# WIMF
-Finds recipes you can make with the ingredients you enter using webscraping from allrecipes.com
-Note: website is incredibly slow and future webscrapers will be much faster
+# WIMF (What's in my Fridge)
+Finds recipes off allrecipes.com based on the ingredients you currently have.
+# Future steps for improvement:
+- Develop new web scraping algorithm 
+- Cleaning up frontend
